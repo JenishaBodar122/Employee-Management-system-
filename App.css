@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f6ff;
+}
+
+.container {
+  padding: 10px;
+  max-width: fit-content;
+  margin: 50px auto;
+}
+
+.btn {
+  border: none;
+  padding: 7px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-add {
+  background: #194064;
+  color: white;
+}
+
+.addContainer {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addContainer form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 50px 40px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 500px;
+}
+
+.addContainer form label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.addContainer form input {
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.addContainer form button {
+  background-color: royalblue;
+  color: white;
+  font-weight: 500;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addContainer .close-btn {
+  margin-left: auto;
+  margin-bottom: 20px;
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+  background-color: #f30a0a;
+  color: white;
+}
+
+.tableContainer {
+  margin-top: 58px;
+  border: 1px solid #c9c5c2;
+  box-shadow: 5px 5px 18px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.tableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableContainer table thead tr {
+  background-color: #194064;
+}
+
+.tableContainer table thead th,
+.tableContainer table tbody tr td {
+  min-width: 200px;
+  padding: 7px;
+  text-align: center;
+}
+
+.tableContainer table tbody tr td {
+  border-bottom: 1px solid #c9c5c2;
+}
+
+.tableContainer table tbody td button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.tableContainer table tbody td .btn-edit {
+  background-color: green;
+  margin-right: 5px;
+}
+
+.tableContainer table tbody td .btn-delete {
+  background-color: red;
+}
